@@ -39,19 +39,11 @@ const initialState = {
     gitJournal: [
         {
             date: "25 Jul",
-            project: "Berulla-streaming-API-services-for-python"
-        },
-        {
-            date: "25 Jun",
-            project: "ChatHub-Chat-application-vuejs-mongodb"
-        },
-        {
-            date: "10 May",
-            project: "Dineasy-coffee-tea-reservation-system"
+            project: "twasil ai - AI-powered personal voice assetance assistant"
         },
         {
             date: "5 May",
-            project: "Financebuddy-personal-finance-tracker"
+            project: "Custom Laravel Starter kit - A starter kit for Laravel projects with roles and permissions and user mangment out of the box"
         }
     ],
     navigation: {

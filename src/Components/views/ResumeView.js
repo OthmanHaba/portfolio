@@ -19,13 +19,11 @@ export function ResumeView() {
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
-                                <h3>Senior Full Stack Developer</h3>
-                                <p class="company">Tech Innovations Inc.</p>
-                                <p class="period">2020 - Present</p>
+                                <h3>Backend Developer</h3>
+                                <p class="company">Presto ly</p>
+                                <p class="period">2025 - Present</p>
                                 <ul class="responsibilities">
-                                    <li>Led development of enterprise-scale applications</li>
-                                    <li>Mentored junior developers and conducted code reviews</li>
-                                    <li>Implemented CI/CD pipelines and DevOps practices</li>
+                                    <li>Wroked on the Partner Applicatoin and the Driver Application Service</li>
                                 </ul>
                             </div>
                         </div>
@@ -33,13 +31,27 @@ export function ResumeView() {
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
-                                <h3>Full Stack Developer</h3>
-                                <p class="company">Digital Solutions Ltd</p>
-                                <p class="period">2017 - 2020</p>
+                                <h3>Mid-level Full Stack Enginner</h3>
+                                <p class="company">Ebtekar LTD</p>
+                                <p class="period">2023 - 2024</p>
                                 <ul class="responsibilities">
-                                    <li>Developed and maintained multiple client projects</li>
-                                    <li>Implemented responsive web applications</li>
-                                    <li>Optimized application performance and security</li>
+                                    <li>Worked on a full solution service for the National Authority of corenal transportation including patint mangment midical centers mangment</li>
+                                    <li>Contributed to a Mosahamat Software that is a platform for the ministry of external affairs</li>
+                                    <li>Developed Twasol ai a full ai voice assisance for company products</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Intern Software Developer</h3>
+                                <p class="company">Sahap co</p>
+                                <p class="period">2023 - 2024</p>
+                                <ul class="responsibilities">
+                                    <li>ended my internship earler than 2 monthes </li>
+                                    <li>implmented a train easy project a program help trennes for the co </li>
+                                    <li>implmented a hr software including the attendance recored system and the payroll system</li>
                                 </ul>
                             </div>
                         </div>
@@ -47,13 +59,14 @@ export function ResumeView() {
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
-                                <h3>Frontend Developer</h3>
-                                <p class="company">WebCraft Studios</p>
-                                <p class="period">2015 - 2017</p>
+                                <h3>Full stack .net Developer</h3>
+                                <p class="company">Easy Solutions co.</p>
+                                <p class="period">2021 - 2022</p>
                                 <ul class="responsibilities">
-                                    <li>Built interactive user interfaces</li>
-                                    <li>Collaborated with design team</li>
-                                    <li>Implemented responsive layouts</li>
+                                    <li>Contributed to an ERP system for multiple companies, including:</li>
+                                    <li>Implementing accounting services, such as invoicing and expense tracking</li>
+                                    <li>Developing HR services, such as employee management and payroll processing</li>
+                                    <li>Integrating the ERP system with various third-party services</li>
                                 </ul>
                             </div>
                         </div>
@@ -66,18 +79,9 @@ export function ResumeView() {
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
-                                <h3>Master's in Computer Science</h3>
-                                <p class="company">Tech University</p>
-                                <p class="period">2013 - 2015</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3>Bachelor's in Software Engineering</h3>
-                                <p class="company">State University</p>
-                                <p class="period">2009 - 2013</p>
+                                <h3>Bachelor's in Computer Engineering </h3>
+                                <p class="company">Collage of Elctroniic technology Tripoli</p>
+                                <p class="period">2021 - present</p>
                             </div>
                         </div>
                     </div>

@@ -15,11 +15,11 @@ export function Header() {
                 </a>
             </div>
             <div class="nav-links">
-                <a href="#" class="nav-link ${navigation.current === 'about' ? 'active' : ''}" 
+                <a href="#about" class="nav-link ${navigation.current === 'about' ? 'active' : ''}" 
                    onclick="handleNavClick('about')">About Me</a>
-                <a href="#" class="nav-link ${navigation.current === 'resume' ? 'active' : ''}"
+                <a href="#resume" class="nav-link ${navigation.current === 'resume' ? 'active' : ''}"
                    onclick="handleNavClick('resume')">Resume</a>
-                <a href="#" class="nav-link ${navigation.current === 'contacts' ? 'active' : ''}"
+                <a href="#contacts" class="nav-link ${navigation.current === 'contacts' ? 'active' : ''}"
                    onclick="handleNavClick('contacts')">Contacts</a>
             </div>
             <div class="social-links">

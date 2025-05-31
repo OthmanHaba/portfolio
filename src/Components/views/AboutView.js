@@ -1,7 +1,9 @@
 import { store } from '../../store/store.js';
 
 export function AboutView() {
-    const { personalInfo } = store.getState();
+    const State = store.getState();
+
+    console.log(State);
 
     return `
         <div class="about-container">
@@ -13,7 +15,7 @@ export function AboutView() {
                             Passionate about creating elegant solutions to complex problems, I bring ideas to life through code.
                         </p>
                         <p class="description">
-                            With over ${personalInfo.stats?.experience || "12+"} years of experience in full-stack development,
+                            With over ${State.stats?.experience || "12+"} years of experience in full-stack development,
                             I've had the privilege of working with cutting-edge technologies and amazing teams worldwide.
                             My approach combines technical expertise with creative problem-solving to deliver exceptional results.
                         </p>
@@ -27,35 +29,33 @@ export function AboutView() {
                     <div class="skill-category">
                         <h3>Frontend Development</h3>
                         <ul class="skill-list">
-                            <li><i class="fab fa-react"></i> React.js</li>
-                            <li><i class="fab fa-angular"></i> Angular</li>
-                            <li><i class="fab fa-vuejs"></i> Vue.js</li>
                             <li><i class="fab fa-js"></i> JavaScript/TypeScript</li>
+                            <li><i class="fab fa-react"></i> React native</li>
+                            <li><i class="fab fa-vuejs"></i> Vue.js</li>
                         </ul>
                     </div>
                     <div class="skill-category">
                         <h3>Backend Development</h3>
                         <ul class="skill-list">
-                            <li><i class="fab fa-node-js"></i> Node.js</li>
-                            <li><i class="fab fa-php"></i> Laravel</li>
-                            <li><i class="fas fa-database"></i> SQL/NoSQL</li>
-                            <li><i class="fas fa-server"></i> RESTful APIs</li>
+                            <li><i class="fab fa-php"></i> php</li>
+                            <li><i class="fab fa-laravel"></i>Laravel</li>
+                            <li><i class="fas fa-server"></i>RESTful APIs</li>
+                            <li><i class="fas fa-database"></i>Mysql-Postgres</li>
                         </ul>
                     </div>
                     <div class="skill-category">
                         <h3>DevOps & Tools</h3>
                         <ul class="skill-list">
-                            <li><i class="fab fa-docker"></i> Docker</li>
-                            <li><i class="fab fa-aws"></i> AWS</li>
-                            <li><i class="fab fa-git-alt"></i> Git</li>
-                            <li><i class="fab fa-jenkins"></i> CI/CD</li>
+                            <li><i class="fab fa-docker"></i>Docker</li>
+                            <li><i class="fab fa-aws"></i>AWS</li>
+                            <li><i class="fab fa-git-alt"></i>Git</li>
+                            <li><i class="fab fa-jenkins"></i>CI/CD</li>
                         </ul>
                     </div>
                     <div class="skill-category">
                         <h3>Other Skills</h3>
                         <ul class="skill-list">
                             <li><i class="fas fa-mobile-alt"></i> Mobile Development</li>
-                            <li><i class="fas fa-paint-brush"></i> UI/UX Design</li>
                             <li><i class="fas fa-shield-alt"></i> Security</li>
                             <li><i class="fas fa-code-branch"></i> Architecture</li>
                         </ul>
