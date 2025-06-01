@@ -1,7 +1,7 @@
 export const translations = {
     ar: {
         nav: {
-            home: 'الصفحة الرئيسية',
+            home: 'الصفحة الرئيسية',
             about: 'حول',
             resume: 'السيرة الذاتية',
             contacts: 'اتصل بنا'
@@ -33,9 +33,35 @@ export const translations = {
                 personal: "الاهتمامات",
                 interests: "الشخصية",
             },
-
+            resume: {
+                title: "سيرتي",
+                downloadCV: "تحميل السيرة الذاتية",
+                workExperience: "الخبرة العملية",
+                education: "التعليم",
+                certifications: "الشهادات",
+                responsibilities: "المسؤوليات",
+                present: "حتى الآن",
+                education_details: {
+                    degree: "بكالوريوس في هندسة الحاسوب",
+                    university: "كلية التقنية الإلكترونية طرابلس",
+                    period: "2021 - حتى الآن"
+                },
+                certifications_list: {
+                    aws: {
+                        title: "مهندس حلول AWS معتمد",
+                        provider: "أمازون ويب سيرفيسز"
+                    },
+                    gcp: {
+                        title: "محترف Google Cloud",
+                        provider: "منصة Google Cloud"
+                    },
+                    scrum: {
+                        title: "مدير سكرم معتمد",
+                        provider: "تحالف سكرم"
+                    }
+                }
+            }
         }
-
     },
     en: {
         nav: {
@@ -71,8 +97,34 @@ export const translations = {
                 personal: "Personal",
                 interests: "Interests",
             },
-
+            resume: {
+                title: "My Resume",
+                downloadCV: "Download CV",
+                workExperience: "Work Experience",
+                education: "Education",
+                certifications: "Certifications",
+                responsibilities: "Responsibilities",
+                present: "Present",
+                education_details: {
+                    degree: "Bachelor's in Computer Engineering",
+                    university: "Collage of Electronic technology Tripoli",
+                    period: "2021 - present"
+                },
+                certifications_list: {
+                    aws: {
+                        title: "AWS Certified Solutions Architect",
+                        provider: "Amazon Web Services"
+                    },
+                    gcp: {
+                        title: "Google Cloud Professional",
+                        provider: "Google Cloud Platform"
+                    },
+                    scrum: {
+                        title: "Certified Scrum Master",
+                        provider: "Scrum Alliance"
+                    }
+                }
+            }
         }
-
     }
 }
