@@ -2,6 +2,96 @@ import { store } from '../../store/store.js';
 
 export function AboutView() {
     const State = store.getState();
+
+    const data = [
+        {
+            label: "Frontend Development",
+            skills: [
+                { icon: "ts", title: "JavaScript/TypeScript" },
+                { icon: "react", title: "React native" },
+                { icon: "flutter", title: "Flutter" },
+                { icon: "vue", title: "Vue.js" },
+            ]
+        },
+        {
+            label: "Backend Development",
+            skills: [
+                { icon: "php", title: "php" },
+                { icon: "python", title: "python" },
+                { icon: "golang", title: "go" },
+                { icon: "rust", title: "Rust" },
+                { icon: "laravel", title: "Laravel" },
+                { icon: "postgres", title: "Mysql-Postgres" },
+            ]
+        },
+        {
+            label: "DevOps & Tools",
+            skills: [
+                { icon: "docker", title: "Docker" },
+                { icon: "aws", title: "AWS" },
+                { icon: "git", title: "Git" },
+                { icon: "jenkins", title: "CI/CD" },
+            ]
+        },
+        {
+            label: "Other Skills",
+            skills: [
+                { icon: "flutter", title: "Mobile Development" },
+                { icon: "kali", title: "Security" },
+                { icon: "linux", title: "Linux" },
+                { icon: "aws", title: "Architecture" },
+            ]
+        }
+    ];
+    const locale = localStorage.getItem('locale') || 'en';
+    const interests = {
+        en: [
+            {
+                icon: "fas fa-laptop-code",
+                title: "Open Source",
+                description: "Contributing to and maintaining open source projects"
+            },
+            {
+                icon: "fas fa-chalkboard-teacher",
+                title: "Mentoring",
+                description: "Helping others grow in their tech journey"
+            },
+            {
+                icon: "fas fa-brain",
+                title: "AI & ML",
+                description: "Exploring artificial intelligence applications"
+            },
+            {
+                icon: "fas fa-book",
+                title: "Learning",
+                description: "Continuously expanding knowledge"
+            }
+        ],
+        ar: [
+            {
+                icon: "fas fa-laptop-code",
+                title: "المصدر المفتوح",
+                description: "المساهمة في المشاريع مفتوحة المصدر وصيانتها"
+            },
+            {
+                icon: "fas fa-chalkboard-teacher",
+                title: "الإرشاد",
+                description: "مساعدة الآخرين على النمو في مسيرتهم التقنية"
+            },
+            {
+                icon: "fas fa-brain",
+                title: "الذكاء الاصطناعي وتعلم الآلة",
+                description: "استكشاف تطبيقات الذكاء الاصطناعي"
+            },
+            {
+                icon: "fas fa-book",
+                title: "التعلم",
+                description: "توسيع المعرفة بشكل مستمر"
+            }
+        ]
+    };
+
+
     return `
         <div class="about-container">
             <section class="about-hero">
@@ -21,7 +111,7 @@ export function AboutView() {
             <section class="skills-section">
                 <h2 class="section-title">${t('pages.about.technical')} <span class="highlight">${t('pages.about.skills')}</span></h2>
                 <div class="skills-grid">
-                    <div class="skill-category">
+                    <!--<div class="skill-category">
                         <h3>Frontend Development</h3>
                         <ul class="skill-list">
                             <li><i class="fab fa-js"></i> JavaScript/TypeScript</li>
@@ -33,7 +123,9 @@ export function AboutView() {
                     <div class="skill-category">
                         <h3>Backend Development</h3>
                         <ul class="skill-list">
-                            <li><i class="fab fa-php"></i> php</li>
+                            <li>
+                            <img src="https://skillicons.dev/icons?i=vue" alt="">
+</i> php</li>
                             <li><i class="fab fa-python"></i> python</li>
                             <li><i class="fab fa-golang"></i> go</li>
                             <li><i class="fab fa-laravel"></i>Laravel</li>
@@ -57,14 +149,37 @@ export function AboutView() {
                             <li><i class="fas fa-shield-alt"></i> Security</li>
                             <li><i class="fas fa-code-branch"></i> Architecture</li>
                         </ul>
-                    </div>
+                    </div>-->
+                    
+                    ${data.map((category) => `
+                        <div class="skill-category">
+                            <h3>${category.label}</h3>
+                            <ul class="skill-list">
+                                ${category.skills.map((skill) => `
+                                    <li>
+                                         <img src="https://skillicons.dev/icons?i=${skill.icon}" alt="ico"> 
+                                        ${skill.title}</li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    `).join('')}
+                    
+                    
                 </div>
             </section>
 
             <section class="interests-section">
                 <h2 class="section-title">${t('pages.about.personal')} <span class="highlight">${t('pages.about.interests')}</span></h2>
                 <div class="interests-grid">
-                    <div class="interest-item">
+                    ${interests[locale].map(intrest => {
+                        return `
+                              <div class="interest-item">
+                                    <i class="${intrest.icon}"></i>
+                                    <h3>${intrest.title}</h3>
+                                    <p>${intrest.description}</p>
+                              </div>
+                        `}).join('')} 
+                    <!--<div class="interest-item">
                         <i class="fas fa-laptop-code"></i>
                         <h3>Open Source</h3>
                         <p>Contributing to and maintaining open source projects</p>
@@ -83,7 +198,7 @@ export function AboutView() {
                         <i class="fas fa-book"></i>
                         <h3>Learning</h3>
                         <p>Continuously expanding knowledge</p>
-                    </div>
+                    </div>-->
                 </div>
             </section>
         </div>

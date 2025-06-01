@@ -29,16 +29,18 @@ export function Header() {
                    onclick="handleNavClick('contacts')">${t('nav.contacts')}</a>
             </div>
             <div class="social-links">
-                <a href="#" class="social-link">
+                <a href="https://x.com/TRAFALG73496987" target="_blank" class="social-link">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="#" class="social-link">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="social-link">
+                <a href="https://www.linkedin.com/in/othman-haba-350b95262/" target="_blank" class="social-link">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="#" class="social-link">
+                
+                <a href="https://www.instagram.com/oth_haba/" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                
+                <a href="https://www.facebook.com/othman.elhadi.712" target="_blank" class="social-link">
                     <i class="fab fa-facebook"></i>
                 </a>
                 

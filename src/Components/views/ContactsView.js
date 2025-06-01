@@ -46,17 +46,19 @@ export function ContactsView() {
                     <div class="social-connections">
                         <h3>${t('pages.contacts.social.title')}</h3>
                         <div class="social-icons">
-                            <a href="#" class="social-icon" title="${t('pages.contacts.social.platforms.github')}">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="social-icon" title="${t('pages.contacts.social.platforms.linkedin')}">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" class="social-icon" title="${t('pages.contacts.social.platforms.twitter')}">
+                            <a href="https://x.com/TRAFALG73496987" target="_blank" class="social-link">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="#" class="social-icon" title="${t('pages.contacts.social.platforms.instagram')}">
+                            <a href="https://www.linkedin.com/in/othman-haba-350b95262/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            
+                            <a href="https://www.instagram.com/oth_haba/" target="_blank" class="social-link">
                                 <i class="fab fa-instagram"></i>
+                            </a>
+                            
+                            <a href="https://www.facebook.com/othman.elhadi.712" target="_blank" class="social-link">
+                                <i class="fab fa-facebook"></i>
                             </a>
                         </div>
                     </div>

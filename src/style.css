@@ -277,6 +277,12 @@ body {
     margin-bottom: 1rem;
 }
 
+.skill-category img {
+    width: 25px;
+    height: 25px;
+}
+
+
 .skill-list {
     list-style: none;
 }
@@ -311,7 +317,8 @@ body {
     transform: translateY(-5px);
 }
 
-.interest-item i {
+
+.interest-item img {
     font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
