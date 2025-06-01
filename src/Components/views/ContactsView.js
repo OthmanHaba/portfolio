@@ -1,9 +1,10 @@
 import { store } from '../../store/store.js';
 
 export function ContactsView() {
+    
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission
         const formData = new FormData(e.target);
         console.log('Form submitted:', Object.fromEntries(formData));
     };
@@ -11,50 +12,50 @@ export function ContactsView() {
     return `
         <div class="contacts-container">
             <section class="contact-header">
-                <h1 class="section-title">Get in <span class="highlight">Touch</span></h1>
-                <p class="contact-subtitle">Let's discuss your project or just have a conversation</p>
+                <h1 class="section-title">${t('pages.contacts.title')} <span class="highlight">${t('pages.contacts.highlight')}</span></h1>
+                <p class="contact-subtitle">${t('pages.contacts.subtitle')}</p>
             </section>
 
             <div class="contact-grid">
                 <section class="contact-info">
-                    <h2>Contact Information</h2>
+                    <h2>${t('pages.contacts.info.title')}</h2>
                     <div class="info-items">
                         <div class="info-item">
                             <i class="fas fa-envelope"></i>
                             <div class="info-content">
-                                <h3>Email</h3>
-                                <p>othman.hadi2002@gmail.com</p>
+                                <h3>${t('pages.contacts.info.email.label')}</h3>
+                                <p>${t('pages.contacts.info.email.value')}</p>
                             </div>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-phone"></i>
                             <div class="info-content">
-                                <h3>Phone</h3>
-                                <p>+218 945429014</p>
+                                <h3>${t('pages.contacts.info.phone.label')}</h3>
+                                <p>${t('pages.contacts.info.phone.value')}</p>
                             </div>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="info-content">
-                                <h3>Location</h3>
-                                <p>Tripoli, Libya</p>
+                                <h3>${t('pages.contacts.info.location.label')}</h3>
+                                <p>${t('pages.contacts.info.location.value')}</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="social-connections">
-                        <h3>Connect with Me</h3>
+                        <h3>${t('pages.contacts.social.title')}</h3>
                         <div class="social-icons">
-                            <a href="#" class="social-icon">
+                            <a href="#" class="social-icon" title="${t('pages.contacts.social.platforms.github')}">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="#" class="social-icon">
+                            <a href="#" class="social-icon" title="${t('pages.contacts.social.platforms.linkedin')}">
                                 <i class="fab fa-linkedin"></i>
                             </a>
-                            <a href="#" class="social-icon">
+                            <a href="#" class="social-icon" title="${t('pages.contacts.social.platforms.twitter')}">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="#" class="social-icon">
+                            <a href="#" class="social-icon" title="${t('pages.contacts.social.platforms.instagram')}">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>
@@ -62,30 +63,30 @@ export function ContactsView() {
                 </section>
 
                 <section class="contact-form">
-                    <h2>Send Message</h2>
+                    <h2>${t('pages.contacts.form.title')}</h2>
                     <form id="contactForm" onsubmit="handleContactSubmit(event)">
                         <div class="form-group">
-                            <label for="name">Name</label>
+                            <label for="name">${t('pages.contacts.form.fields.name.label')}</label>
                             <input type="text" id="name" name="name" required 
-                                   placeholder="Your name">
+                                   placeholder="${t('pages.contacts.form.fields.name.placeholder')}">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email">${t('pages.contacts.form.fields.email.label')}</label>
                             <input type="email" id="email" name="email" required 
-                                   placeholder="Your email">
+                                   placeholder="${t('pages.contacts.form.fields.email.placeholder')}">
                         </div>
                         <div class="form-group">
-                            <label for="subject">Subject</label>
+                            <label for="subject">${t('pages.contacts.form.fields.subject.label')}</label>
                             <input type="text" id="subject" name="subject" required 
-                                   placeholder="Message subject">
+                                   placeholder="${t('pages.contacts.form.fields.subject.placeholder')}">
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
+                            <label for="message">${t('pages.contacts.form.fields.message.label')}</label>
                             <textarea id="message" name="message" required 
-                                    placeholder="Your message"></textarea>
+                                    placeholder="${t('pages.contacts.form.fields.message.placeholder')}"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i> Send Message
+                            <i class="fas fa-paper-plane"></i> ${t('pages.contacts.form.submit')}
                         </button>
                     </form>
                 </section>
@@ -101,6 +102,6 @@ window.handleContactSubmit = (e) => {
     const data = Object.fromEntries(formData);
     console.log('Form submitted:', data);
     // Here you would typically send the data to a server
-    alert('Message sent successfully!');
+    alert(t('pages.contacts.form.success'));
     e.target.reset();
 }; 

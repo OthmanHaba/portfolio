@@ -60,6 +60,58 @@ export const translations = {
                         provider: "تحالف سكرم"
                     }
                 }
+            },
+            contacts: {
+                title: "تواصل",
+                highlight: "معي",
+                subtitle: "دعنا نناقش مشروعك أو نتحدث فقط",
+                info: {
+                    title: "معلومات التواصل",
+                    email: {
+                        label: "البريد الإلكتروني",
+                        value: "othman.hadi2002@gmail.com"
+                    },
+                    phone: {
+                        label: "الهاتف",
+                        value: "+218 945429014"
+                    },
+                    location: {
+                        label: "الموقع",
+                        value: "طرابلس، ليبيا"
+                    }
+                },
+                social: {
+                    title: "تواصل معي",
+                    platforms: {
+                        github: "GitHub",
+                        linkedin: "LinkedIn",
+                        twitter: "Twitter",
+                        instagram: "Instagram"
+                    }
+                },
+                form: {
+                    title: "أرسل رسالة",
+                    fields: {
+                        name: {
+                            label: "الاسم",
+                            placeholder: "اسمك"
+                        },
+                        email: {
+                            label: "البريد الإلكتروني",
+                            placeholder: "بريدك الإلكتروني"
+                        },
+                        subject: {
+                            label: "الموضوع",
+                            placeholder: "موضوع الرسالة"
+                        },
+                        message: {
+                            label: "الرسالة",
+                            placeholder: "رسالتك"
+                        }
+                    },
+                    submit: "إرسال الرسالة",
+                    success: "تم إرسال الرسالة بنجاح!"
+                }
             }
         }
     },
@@ -123,6 +175,58 @@ export const translations = {
                         title: "Certified Scrum Master",
                         provider: "Scrum Alliance"
                     }
+                }
+            },
+            contacts: {
+                title: "Get in",
+                highlight: "Touch",
+                subtitle: "Let's discuss your project or just have a conversation",
+                info: {
+                    title: "Contact Information",
+                    email: {
+                        label: "Email",
+                        value: "othman.hadi2002@gmail.com"
+                    },
+                    phone: {
+                        label: "Phone",
+                        value: "+218 945429014"
+                    },
+                    location: {
+                        label: "Location",
+                        value: "Tripoli, Libya"
+                    }
+                },
+                social: {
+                    title: "Connect with Me",
+                    platforms: {
+                        github: "GitHub",
+                        linkedin: "LinkedIn",
+                        twitter: "Twitter",
+                        instagram: "Instagram"
+                    }
+                },
+                form: {
+                    title: "Send Message",
+                    fields: {
+                        name: {
+                            label: "Name",
+                            placeholder: "Your name"
+                        },
+                        email: {
+                            label: "Email",
+                            placeholder: "Your email"
+                        },
+                        subject: {
+                            label: "Subject",
+                            placeholder: "Message subject"
+                        },
+                        message: {
+                            label: "Message",
+                            placeholder: "Your message"
+                        }
+                    },
+                    submit: "Send Message",
+                    success: "Message sent successfully!"
                 }
             }
         }
