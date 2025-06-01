@@ -67,7 +67,8 @@ body {
 }
 
 .code-tag {
-    color: var(--primary-color);
+    /*color: var(--primary-color);*/
+    color: var(--text-color);
 }
 
 .nav-links {
@@ -89,6 +90,7 @@ body {
 .social-links {
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 .social-link {
@@ -401,6 +403,20 @@ body {
 .company {
     color: #999;
     font-size: 0.9rem;
+}
+
+.company-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.company-info img {
+    width: 2rem;
+    height: 2rem;
+    margin-righx: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 90%;
 }
 
 .period {

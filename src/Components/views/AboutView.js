@@ -2,35 +2,31 @@ import { store } from '../../store/store.js';
 
 export function AboutView() {
     const State = store.getState();
-
-    console.log(State);
-
     return `
         <div class="about-container">
             <section class="about-hero">
-                <h1 class="section-title">About <span class="highlight">Me</span></h1>
+                <h1 class="section-title">${t('pages.about.about')} <span class="highlight">${t('pages.about.me')}</span></h1>
                 <div class="about-content">
                     <div class="about-text">
                         <p class="lead">
-                            Passionate about creating elegant solutions to complex problems, I bring ideas to life through code.
+                            ${t('pages.about.lead')}
                         </p>
                         <p class="description">
-                            With over ${State.stats?.experience || "12+"} years of experience in full-stack development,
-                            I've had the privilege of working with cutting-edge technologies and amazing teams worldwide.
-                            My approach combines technical expertise with creative problem-solving to deliver exceptional results.
+                            ${t('pages.about.description')}
                         </p>
                     </div>
                 </div>
             </section>
 
             <section class="skills-section">
-                <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+                <h2 class="section-title">${t('pages.about.technical')} <span class="highlight">${t('pages.about.skills')}</span></h2>
                 <div class="skills-grid">
                     <div class="skill-category">
                         <h3>Frontend Development</h3>
                         <ul class="skill-list">
                             <li><i class="fab fa-js"></i> JavaScript/TypeScript</li>
                             <li><i class="fab fa-react"></i> React native</li>
+                            <li><i class="fab fa-vuejs"></i> React </li>
                             <li><i class="fab fa-vuejs"></i> Vue.js</li>
                         </ul>
                     </div>
@@ -38,6 +34,8 @@ export function AboutView() {
                         <h3>Backend Development</h3>
                         <ul class="skill-list">
                             <li><i class="fab fa-php"></i> php</li>
+                            <li><i class="fab fa-python"></i> python</li>
+                            <li><i class="fab fa-golang"></i> go</li>
                             <li><i class="fab fa-laravel"></i>Laravel</li>
                             <li><i class="fas fa-server"></i>RESTful APIs</li>
                             <li><i class="fas fa-database"></i>Mysql-Postgres</li>
@@ -64,7 +62,7 @@ export function AboutView() {
             </section>
 
             <section class="interests-section">
-                <h2 class="section-title">Personal <span class="highlight">Interests</span></h2>
+                <h2 class="section-title">${t('pages.about.personal')} <span class="highlight">${t('pages.about.interests')}</span></h2>
                 <div class="interests-grid">
                     <div class="interest-item">
                         <i class="fas fa-laptop-code"></i>
