@@ -10,7 +10,7 @@ export function Header() {
     return `
         <nav class="nav-container">
             <div class="logo">
-                <a href="/" class="logo-text">
+                <a href="/#home" class="logo-text" onclick="handleNavClick('home')">
                     <span class="code-tag">&lt;&gt;</span> Othman.Haba.dev
                 </a>
             </div>

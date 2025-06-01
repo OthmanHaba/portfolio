@@ -4,7 +4,7 @@ export function HomeView() {
     const { personalInfo, stats, gitJournal } = store.getState();
 
     return `
-        <div class="home-container">
+        <div class="home-container" id="home">
             <section class="hero-section">
                 <div class="hero-content">
                     <div class="profile-section">
