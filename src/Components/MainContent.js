@@ -3,6 +3,7 @@ import {HomeView} from './views/HomeView.js';
 import {AboutView} from './views/AboutView.js';
 import {ResumeView} from './views/ResumeView.js';
 import {ContactsView} from './views/ContactsView.js';
+import {ProjectsView} from './views/ProjectsView.js';
 
 export function MainContent() {
     const {navigation} = store.getState();
@@ -11,7 +12,9 @@ export function MainContent() {
         home: HomeView,
         about: AboutView,
         resume: ResumeView,
-        contacts: ContactsView
+        projects: ProjectsView,
+        contacts: ContactsView,
+        
     };
 
     const sections = Object.keys(views);

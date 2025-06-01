@@ -94,6 +94,25 @@ const initialState = {
                 gitjournal: "git journaling",
             }
         }
+    },
+    projects: {
+        en: [
+        {
+            title: "Task Management System",
+            image: "./images/projects/task-manager.png",
+            description: "A collaborative task management system with real-time updates, team chat, and project analytics.",
+            technologies: ["Node.js", "Socket.io", "React", "MongoDB"],
+            link: "https://example.com/task-manager"
+        }],
+        ar: [
+            {
+                title: "منصة التجارة الإلكترونية",
+                image: "./images/projects/ecommerce.png",
+                description: "منصة التجارة الإلكترونية الكاملة المبنية على لارافيل وفيو جيت. تشمل إدارة المنتجات ووظيفة العربة، والدمج مع الدفع.",
+                technologies: ["لارافيل", "فيو جيت", "ميسك", "ريديس"],
+                link: "https://example.com/ecommerce"
+            }
+        ]
     }
 };
 

@@ -7,6 +7,10 @@ export const translations = {
             contacts: 'اتصل بنا'
         },
         pages: {
+            projects: {
+                title: "مشاريعي",
+                viewProject: "عرض المشروع",
+            },
             home: {
                 greeting: 'مرحبا، انا عثمان حابة',
                 role: {
@@ -123,6 +127,10 @@ export const translations = {
             contacts: 'Contacts'
         },
         pages: {
+            projects: {
+                title: "My Projects",
+                viewProject: "View Project",
+            },
             home: {
                 greeting: 'hello, i\'m Othaman Haban',
                 role: {
