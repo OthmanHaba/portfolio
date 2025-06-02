@@ -1,10 +1,7 @@
 import {store} from '../../store/store.js';
 
 export function HomeView() {
-    const {personalInfo, stats, gitJournal} = store.getState();
-
-    const {pages: {home}} = store.getState();
-
+    const {stats} = store.getState();
     // const locale = localStorage.getItem('locale') || 'en';
     // const t = home[locale];
 
