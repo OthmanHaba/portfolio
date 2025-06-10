@@ -7,7 +7,7 @@
     --text-color: #ffffff;
     --primary-color: #4CAF50;
     --secondary-color: #2C2C2C;
-    --accent-color: #333333;
+    --accent-color: #332333;
 }
 
 html {
@@ -27,6 +27,11 @@ body {
     line-height: 1.6;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .layout {
     max-width: 1200px;
     margin: 0 auto;
@@ -43,11 +48,6 @@ body {
     align-items: center;
     padding: 1.5rem 0;
     border-bottom: 1px solid var(--accent-color);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 50;
     margin-right: 4rem;
     margin-left: 4rem;
     background: #0a0a0a;
@@ -326,10 +326,12 @@ body {
 }
 
 
+.interest-item i,
 .interest-item img {
     font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
+    display: block;
 }
 
 /* Resume View Styles */
@@ -371,6 +373,33 @@ body {
     grid-template-columns: 3fr 2fr;
     gap: 2rem;
     margin-bottom: 3rem;
+}
+
+.main-content {
+    /* Main content area for resume */
+}
+
+.sidebar {
+    /* Sidebar area for resume */
+}
+
+.education-item {
+    background: var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.education-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.institution {
+    display: block;
+    color: #999;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
 }
 
 .timeline {
@@ -468,12 +497,122 @@ body {
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .certification-item i {
     font-size: 2rem;
     color: var(--primary-color);
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+
+.certification-item div {
+    text-align: left;
+}
+
+.certification-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+.certification-item .provider {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+/* Participation Section */
+.participation-section {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--accent-color);
+}
+
+.participation-section .section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.participation-section .section-title i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.participation-item {
+    background: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.participation-item:hover {
+    transform: translateY(-2px);
+}
+
+/* Items with image - grid layout */
+.participation-item:has(.participation-image) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* Items without image - simple layout */
+.participation-item:not(:has(.participation-image)) {
+    display: block;
+}
+
+.participation-image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.participation-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.participation-img:hover {
+    transform: scale(1.02);
+}
+
+.participation-content {
+    padding: 0;
+}
+
+.participation-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.participation-project {
+    color: var(--text-color);
+    font-size: 1.1rem;
     margin-bottom: 1rem;
+    font-weight: 500;
+    background: var(--accent-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.participation-description {
+    color: #ccc;
+    line-height: 1.6;
+    font-size: 1rem;
 }
 
 /* Contacts View Styles */
@@ -521,6 +660,17 @@ body {
 
 .info-content p {
     color: #999;
+}
+
+.info-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.info-content a:hover {
+    color: #66bb69;
+    text-decoration: underline;
 }
 
 .social-connections {
@@ -587,6 +737,17 @@ body {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
+}
+
+.success-message {
+    background: rgba(76, 175, 80, 0.1);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
 .projects-container {
@@ -892,6 +1053,40 @@ body {
         font-size: 1.1rem;
     }
 
+    .participation-section {
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+
+    .participation-section .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .participation-item:has(.participation-image) {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .participation-item {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .participation-img {
+        height: 200px;
+    }
+
+    .participation-title {
+        font-size: 1.3rem;
+    }
+
+    .participation-project {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+
     .contacts-container {
         padding: 1rem 0;
     }
@@ -1087,6 +1282,42 @@ body {
         width: 100%;
         justify-content: center;
         padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .participation-section {
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+    }
+
+    .participation-section .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .participation-item:has(.participation-image) {
+        gap: 1rem;
+    }
+
+    .participation-item {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .participation-img {
+        height: 180px;
+    }
+
+    .participation-title {
+        font-size: 1.2rem;
+    }
+
+    .participation-project {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .participation-description {
         font-size: 0.9rem;
     }
 }

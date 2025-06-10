@@ -205,7 +205,7 @@ export const translations = {
                     }
                 },
                 social: {
-                    title: "Connect with Me",
+                    title: "Follow Me",
                     platforms: {
                         github: "GitHub",
                         linkedin: "LinkedIn",
@@ -239,4 +239,4 @@ export const translations = {
             }
         }
     }
-}
+}; 
